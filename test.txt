@@ -1,0 +1,11 @@
+https://www.youtube.com/watch?v=EehNtk4cTbo&t=12s
+
+yt-dlp --write-auto-sub --skip-download --sub-lang en "https://www.youtube.com/watch?v=EehNtk4cTbo&t=12s"
+
+
+yt-dlp --write-auto-sub --skip-download --sub-lang en \
+-o "./transcripts/%(id)s.%(ext)s" "https://www.youtube.com/watch?v=EehNtk4cTbo&t=12s"
+
+
+
+yt-dlp --write-auto-sub --skip-download --sub-format json --sub-lang en -o "./transcripts/%(id)s.%(ext)s" "https://www.youtube.com/watch?v=EehNtk4cTbo&t=12s"

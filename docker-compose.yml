@@ -1,0 +1,13 @@
+services:
+  yt-transcript:
+    build: .
+    container_name: yt-transcript-service
+    ports:
+      - "8080:8080"  # Updated from 5000 to 8080
+    volumes:
+      - ./transcripts:/app/transcripts
+      - ./data:/app/data
+      - ./scripts:/app/scripts
+    environment:
+      - PORT=8080  # Updated from 5000 to 8080
+    restart: always
